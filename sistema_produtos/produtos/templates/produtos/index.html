@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+</head>
+<body>
+    <h1>Bem-vindo ao Sistema de Cadastro de Produtos!</h1>
+    <p>Esta é a página inicial.</p>
+    
+    <!-- Link para a página de cadastro -->
+    <a href="/produtos/cadastrar/">Cadastrar Produtos</a>
+
+    <!-- Exibição de mensagens -->
+    {% if messages %}
+        <ul>
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>
+
